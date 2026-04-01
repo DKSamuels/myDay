@@ -23,12 +23,32 @@ Your workspace is now active. The skill loads automatically when you open a Cowo
 
 **3. Connect your integrations.**
 
-In the Cowork integrations panel, connect:
-- Gmail or Outlook (required)
-- Google Calendar or Outlook Calendar (required)
-- A meeting notes tool like Granola, Otter, or Fireflies (optional, see Step 5)
+myDay needs access to your email and calendar. These are the connections that make the digest, the email sweep, and the morning prep work. Without them, the system has nothing to read.
 
-You're ready. Run the setup steps below in order.
+To connect:
+1. In Claude Desktop, click the **Cowork** tab
+2. Click **Integrations** (or the plug icon) in the sidebar
+3. Find Gmail or Outlook and click **Connect** — you'll be prompted to sign in and authorize access
+4. Do the same for Google Calendar or Outlook Calendar
+5. Once both show a green connected status, you're set
+
+**Required:**
+- Gmail or Outlook
+- Google Calendar or Outlook Calendar
+
+**Optional:** A meeting notes tool like Granola, Otter, Fireflies, or Fathom. If you use one, connect it now. If not, skip it — you can add it later. myDay works without it; you'll just log meetings manually.
+
+**Verify before moving on.** Open a Cowork session and paste this:
+
+```
+Check my connected integrations. Confirm you can access:
+1. My email (Gmail or Outlook) — list the 3 most recent email subjects
+2. My calendar — list today's events or the next 3 upcoming events
+
+If either check fails, tell me which one and what error you see.
+```
+
+If both return results, you're ready. If one fails, fix the connection in the integrations panel before continuing. The setup steps won't work without it.
 
 ---
 
@@ -73,22 +93,31 @@ Create the following file structure in my workspace folder:
 - crm/commitments.json    (open and resolved commitments)
 - crm/preferences.json    (classifier learning, starts empty)
 
-Before creating any files, ask me to define my active projects.
-For each project, collect:
-1. Name (e.g., "Job Search", "New Venture", "Advisory Network")
-2. One-sentence description
-3. Any specific company domains or keywords that signal relevance
-   (optional, I can add these later)
+Before creating any files, help me define my active projects.
 
-Allow up to 5 active projects. After I define them, confirm the
-config and create all files. Then confirm setup is complete and
-tell me the next step.
+Start by presenting these four starter options as a numbered list
+and ask me which ones I want to activate:
+
+1. My Network — professional relationships I want to maintain and keep warm
+2. Job Search — recruiters, hiring managers, warm intros, references
+3. Business Development — prospects, partners, referral sources
+4. Advisors & Mentors — people I learn from or go to for counsel
+
+Then ask: "Would you like to rename any of these, or add a project
+of your own? You can run up to 5 projects total."
+
+For any project I activate or add, collect:
+- Name (confirmed or custom)
+- One-sentence description of what I'm working toward
+- Any specific company domains or keywords that signal relevance
+  (optional, I can add these later)
+
+After I confirm my project list, confirm the config and create all
+files. Then confirm setup is complete and tell me the next step.
 ```
 ---
 
-**What to expect:** Claude will ask you to describe your active projects one at a time. Keep descriptions to 1-2 sentences. A name and a sentence is enough. The classifier learns from your decisions over time.
-
-> **Suggested projects to consider:** Job Search, New Venture, Advisory Network, Business Development, Home/Personal. Add or skip any of these. Define what's actually active for you right now.
+**What to expect:** Claude will present the four starter projects and ask which ones apply to you. Select the ones that fit, skip the ones that don't, and add your own if you have something specific in mind. One sentence per project is enough. The classifier learns from your decisions over time.
 
 ---
 
