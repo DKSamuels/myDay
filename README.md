@@ -76,7 +76,7 @@ For everything else, you interact through simple chat commands:
 
 LinkedIn is where a lot of relationship activity happens, especially for job searches and business development. It's also where you find context on people before you meet them.
 
-The CRM doesn't pull LinkedIn automatically, but it works alongside it in two practical ways.
+myDay doesn't pull LinkedIn automatically, but it works alongside it in two practical ways.
 
 First, when you're researching a contact or preparing for a call, you can ask Claude to look them up on LinkedIn. It pulls their current role, background, mutual connections, and anything relevant from their recent activity, and that context gets added to their contact record for next time. This works through the [Claude in Chrome browser extension](https://claude.ai/download).
 

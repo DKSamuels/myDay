@@ -56,7 +56,7 @@ Claude has three models. This system uses all three, but for different jobs. Usi
 
 ---
 
-### Step 1: Initialize the CRM
+### Step 1: Initialize myDay
 **Model: Opus 4.6 + Extended Thinking**
 
 Open a new Cowork session in your workspace folder. Paste this prompt:
@@ -290,14 +290,14 @@ My meeting notes tool is: [TOOL NAME]
 
 > **Review the extracted commitments carefully.** Some will be accurate. Some will be false positives, like casual mentions that weren't real commitments. Dismiss anything that's not genuine. This trains the extractor.
 
-> **Don't have a meeting notes tool?** You can add one later and run this sync at any time. The CRM works without it. Calendar events become interaction stubs, and you can log any call or meeting manually with the NOTE command.
+> **Don't have a meeting notes tool?** You can add one later and run this sync at any time. myDay works without it. Calendar events become interaction stubs, and you can log any call or meeting manually with the NOTE command.
 
 ---
 
 ### Step 6: Set up the digest
 **Model: Sonnet** (for setup) | **Haiku** (for all runs)
 
-Run this last. Creates the scheduled task that keeps the CRM current automatically.
+Run this last. Creates the scheduled task that keeps myDay current automatically.
 
 **Choosing your cadence:** Pick the frequency that fits how active your project is right now. You can change it at any time.
 
@@ -360,7 +360,7 @@ Do not update any files until I've responded to the cards.
 ```
 ---
 
-**Setup is complete.** The digest runs on your chosen schedule. The CRM builds itself from this point forward.
+**Setup is complete.** The digest runs on your chosen schedule. myDay builds itself from this point forward.
 
 > **Adjusting the schedule later:** Tell Claude "Update my Personal CRM Digest schedule to [new cadence]" and it will modify the scheduled task.
 
@@ -605,7 +605,7 @@ After a digest review session, tell Claude: "Update my CRM preferences based on 
 **The digest is surfacing too many items**
 The first week will be noisier than normal. After the first 10 sessions it should stabilize at 3-6 cards. If it stays high: "Review my CRM preferences and identify any patterns I've consistently dismissed. Apply those as permanent exclusions."
 
-**A contact isn't appearing in the CRM**
+**A contact isn't appearing in myDay**
 Check two things: (1) Are they suppressed? If so, use the unsuppress prompt. (2) Did their email get classified with high enough confidence? If not, add them manually.
 
 **Meeting notes aren't syncing**
