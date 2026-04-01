@@ -24,7 +24,7 @@ Your data lives in a folder on your computer as simple JSON files. Claude reads 
 
 ## Projects
 
-The CRM is organized around projects: discrete goals where you're managing a set of contacts toward an outcome. You can run multiple projects at the same time, completely independently.
+myDay is organized around projects: discrete goals where you're managing a set of contacts toward an outcome. You can run multiple projects at the same time, completely independently.
 
 A project can be anything where you have a lot of people, phone numbers, and follow-ups to track:
 
