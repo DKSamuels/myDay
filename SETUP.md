@@ -6,11 +6,27 @@
 
 ## Before you do anything else
 
-1. Go to [claude.com/download](https://claude.com/download). Download the app.
-2. You need a Claude Pro account ($20/month). It's very much worth it.
-3. Open the app. Click the **Cowork** tab at the top, between Chat and Code.
-4. Select a folder from your computer to use as your workspace. Name it something simple. "myDay" works well. If you're new to Claude and want to understand what it can actually do before diving in, [start here](https://open.substack.com/pub/ruben/p/claude?utm_campaign=post-expanded-share&utm_medium=web).
-5. Connect **Gmail** and **Google Calendar** in the Cowork integrations panel. Both are required. A meeting notes tool (Granola, Otter, Fireflies, or similar) is optional (see Step 5).
+**1. Get Claude Desktop running.**
+
+Go to [claude.com/download](https://claude.com/download). Download and install the app. You need a Claude Pro account ($20/month) to use Cowork. Sign up at [claude.ai](https://claude.ai) if you don't have one. If you're new to Claude and want to understand what it can actually do before diving in, [start here](https://open.substack.com/pub/ruben/p/claude?utm_campaign=post-expanded-share&utm_medium=web).
+
+**2. Create your workspace folder and install the skill file.**
+
+This is the step most guides skip. The skill file is what teaches Claude the myDay commands. Without it, nothing below will work.
+
+1. Create a new folder on your computer. Put it somewhere you'll find it again. "myDay" on your Desktop is fine.
+2. Inside that folder, create this folder path: `.claude/skills/myday/`
+3. Download `SKILL.md` from this repo (it's in the `skill/` folder). Save it to `.claude/skills/myday/SKILL.md` inside your new folder.
+4. Open Claude Desktop. Click the **Cowork** tab at the top. Click **Select Folder** and choose the folder you just created.
+
+Your workspace is now active. The skill loads automatically when you open a Cowork session in this folder.
+
+**3. Connect your integrations.**
+
+In the Cowork integrations panel, connect:
+- Gmail or Outlook (required)
+- Google Calendar or Outlook Calendar (required)
+- A meeting notes tool like Granola, Otter, or Fireflies (optional, see Step 5)
 
 You're ready. Run the setup steps below in order.
 

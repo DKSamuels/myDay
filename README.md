@@ -76,7 +76,7 @@ For everything else, you interact through simple chat commands:
 
 LinkedIn is where a lot of relationship activity happens, especially for job searches and business development. It's also where you find context on people before you meet them.
 
-myDay doesn't pull LinkedIn automatically, but it works alongside it in two practical ways.
+The CRM doesn't pull LinkedIn automatically, but it works alongside it in two practical ways.
 
 First, when you're researching a contact or preparing for a call, you can ask Claude to look them up on LinkedIn. It pulls their current role, background, mutual connections, and anything relevant from their recent activity, and that context gets added to their contact record for next time. This works through the [Claude in Chrome browser extension](https://claude.ai/download).
 
@@ -121,7 +121,15 @@ No API keys. No database. No external infrastructure. Claude does the work; your
 
 ## Getting started
 
-Read [`SETUP.md`](SETUP.md) and follow the steps in order. Setup takes about 45 minutes the first time. After that, open the digest on your chosen schedule, respond to the cards, and the system runs itself.
+Three things before you open SETUP.md:
+
+1. Download Claude Desktop and make sure you have a Claude Pro account ([claude.com/download](https://claude.com/download))
+2. Create a folder on your computer for your workspace
+3. Download `SKILL.md` from the `skill/` folder in this repo and save it to `.claude/skills/myday/SKILL.md` inside that folder
+
+The skill file is what teaches Claude the myDay commands. Install it before running any setup prompts, or nothing will work.
+
+Once that's done, open [`SETUP.md`](SETUP.md) and follow the steps in order. Setup takes about 45 minutes the first time. After that, open the digest on your chosen schedule, respond to the cards, and the system runs itself.
 
 ---
 
